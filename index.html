@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessBoard</title>
+    <script src="https://kit.fontawesome.com/97ba937bb3.js" crossorigin="anonymous"></script>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            margin:50px 20px;
+            /* align-items: center; */
+        }
+        .container{
+            border: 2px solid black;
+        }
+        #row1{
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: center;
+            align-items: flex-start;
+            gap:5px;
+        }
+        #row2{
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: center;
+            align-items: flex-start;
+            gap:5px;
+        }
+       
+        #row1 :nth-child(even){
+            background-color: rgb(95, 91, 91);
+            color:white;
+            
+        }
+        #row2 :nth-child(odd){
+            background-color: rgb(95, 91, 91);
+            color:white;
+        }
+        .item{
+            height: 11vh;
+            /* max-height: 125px; */
+            width:8vw;
+            display: flex;
+            /* align-self: baseline; */
+            align-items: center;
+           justify-items: center;
+           align-items: center;
+          
+           
+        }
+       img:hover {
+            transform:scale(3.5);
+            filter: drop-shadow(0px 0px  15px blue);
+                /* font-size: 250px; */
+                /* height:500px;
+                width:500px;
+                border:5px solid red; */
+        }
+        .imm{
+            margin-left: auto; margin-right: auto; width:20vw; max-width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div id="row1">
+                <div class="item"><img class="imm"  src="./chess-rook-solid.svg" width="100%" alt=""></div>
+                <div class="item"><img class="imm" src="./chess-knight-solid.svg"  width="50%"  alt=""></div>
+                <div class="item"><img style="max-height: 60px;" class="imm" src="./chess-bishop-solid.svg" width="50%"  alt=""></div>
+                <div class="item"><img class="imm" src="./chess-king-solid.svg"  width="50%"  alt=""></div>
+                <div class="item"><img class="imm" src="./chess-queen-solid (1).svg"  width="50%"  alt=""></div>
+                <div class="item"><img style="max-height: 60px;"  class="imm" src="./chess-bishop-solid.svg"  width="50%"  alt=""></div>
+                <div class="item"><img class="imm" src="./chess-knight-solid.svg" width="50%"  alt=""></div>
+                <div class="item"><img class="imm" src="./chess-rook-solid.svg" width="50%"  alt=""></div>
+            </div>
+            <div id="row2" >
+                <div class="item"><img style="background: none; max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" alt=""></div>
+                <div class="item"><img style="background: none; max-height: 60px; " class="imm"  src="./chess-pawn-solid.svg" alt=""></div>
+                <div class="item"><img style=" background: none; max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" width="100%" alt=""></div>
+                <div class="item"><img style=" background: none; max-height: 60px; " class="imm"  src="./chess-pawn-solid.svg"   alt=""></div>
+                <div class="item"><img style="background: none; max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg"  width="100%" alt=""></div>
+                <div class="item"><img style=" background: none; max-height: 60px; " class="imm"  src="./chess-pawn-solid.svg"   alt=""></div>
+                <div class="item"><img style="background: none; max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" width="100%" alt=""></div>
+                <div class="item"><img style="background: none; max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg"   alt=""></div>
+            </div>
+            <!-- HH
+                <div id="row1" id="ss">
+                <div class="item"><img style="max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px; " class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px; " class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px; " class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+          </div>
+            -->
+
+            <div id="row1" id="ss">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+            <div id="row2" class="row2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+            <div id="row1" id="ss">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+            <div id="row2" class="row2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+            <div id="row1" id="ss">
+                <div class="item"><img style="max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px; " class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px; " class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px;" class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img style="max-height: 60px; " class="imm"  src="./chess-pawn-solid.svg" heigh="100%" width="100%" alt=""></div>
+          </div>
+            <div id="row2" class="row2">
+                <!-- <div class="item"><img class="imm"  src="./chess-rook-solid.svg" width="100%" alt=""></div> -->
+
+                <div class="item"><img  style="background: none; " class="imm"  src="./chess-rook-solid.svg" heigh="100%" width="100%" alt=""></div>
+                <div class="item"><img  style="background: none; " class="imm" src="./chess-knight-solid.svg" heigh="50%" width="50%"  alt=""></div>
+                <div class="item"><img style="background: none;  max-height: 60px;" class="imm" src="./chess-bishop-solid.svg" heigh="50%" width="50%"  alt=""></div>
+                <div class="item"><img style="background: none; " class="imm" src="./chess-king-solid.svg" heigh="50%" width="50%"  alt=""></div>
+                <div class="item"><img  style="background: none; " class="imm" src="./chess-queen-solid (1).svg" heigh="50%" width="50%"  alt=""></div>
+                <div class="item"><img style="max-height: 60px; background: none; "  class="imm" src="./chess-bishop-solid.svg"  heigh="50%" width="50%"  alt=""></div>
+                <div class="item"><img  style="background: none; " class="imm" src="./chess-knight-solid.svg" heigh="50%" width="50%"  alt=""></div>
+                <div class="item"><img  style="background: none; " class="imm" style="background: none; " src="./chess-rook-solid.svg" heigh="50%" width="50%"  alt=""></div>
+              </div>
+
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
